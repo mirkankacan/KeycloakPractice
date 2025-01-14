@@ -5,8 +5,36 @@ VisualStudioVersion = 17.12.35521.163 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7E60CDBE-F5B3-42CA-925C-E48EFCC42AD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keycloak.Auth.Api", "src\Keycloak.Auth.Api\Keycloak.Auth.Api.csproj", "{E3278264-5DFA-4F2B-97B3-854B7535977A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keycloak.Auth.Proxy", "src\Keycloak.Auth.Proxy\Keycloak.Auth.Proxy.csproj", "{05F090C9-91C4-44C5-B7B4-2CD20AB35CDE}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{48A799AA-C8D2-43F0-9671-999145EE4A9B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3278264-5DFA-4F2B-97B3-854B7535977A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3278264-5DFA-4F2B-97B3-854B7535977A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3278264-5DFA-4F2B-97B3-854B7535977A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3278264-5DFA-4F2B-97B3-854B7535977A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F090C9-91C4-44C5-B7B4-2CD20AB35CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F090C9-91C4-44C5-B7B4-2CD20AB35CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F090C9-91C4-44C5-B7B4-2CD20AB35CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F090C9-91C4-44C5-B7B4-2CD20AB35CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A799AA-C8D2-43F0-9671-999145EE4A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A799AA-C8D2-43F0-9671-999145EE4A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A799AA-C8D2-43F0-9671-999145EE4A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A799AA-C8D2-43F0-9671-999145EE4A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3278264-5DFA-4F2B-97B3-854B7535977A} = {7E60CDBE-F5B3-42CA-925C-E48EFCC42AD5}
+		{05F090C9-91C4-44C5-B7B4-2CD20AB35CDE} = {7E60CDBE-F5B3-42CA-925C-E48EFCC42AD5}
 	EndGlobalSection
 EndGlobal
